@@ -1,2 +1,1 @@
-# holbertonschool-higher_level_programming
-training on python
+*this repositry contains the higher level programming training projects*
