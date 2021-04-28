@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 add = __import__('add_0').add
 
 if __name__ == '__main__':
