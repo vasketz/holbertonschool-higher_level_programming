@@ -8,4 +8,4 @@ def uppercase(str):
         else:
             c += chr(ord(str[i]))
         i += 1
-    print(c)  
+    print(c)
