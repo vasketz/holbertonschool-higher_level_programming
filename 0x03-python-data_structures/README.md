@@ -1,0 +1,1 @@
+*This folder contains a data structures project of holberton school*
