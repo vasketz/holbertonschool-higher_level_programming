@@ -5,5 +5,5 @@ def no_c(my_string):
         s = my_string[i]
         if s == "c" or s == "C":
             s = ""
-        new = new + s    
+        new = new + s
     return new
