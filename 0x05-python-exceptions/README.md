@@ -1,0 +1,1 @@
+*This folder contain the project 0x05 of higher level programming with python of exceptions in python*
