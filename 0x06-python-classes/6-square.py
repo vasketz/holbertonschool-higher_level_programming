@@ -13,6 +13,10 @@ class Square():
                 raise ValueError("size must be >= 0")
         else:
             raise TypeError("size must be an integer")
+        for i in position:
+            if (type(i) is not int or (len(position) != 2) or i < 0):
+                raise TypeError(
+                    "position must be a tuple of 2 positive integers")
 
     def area(self):
         """Define an area of square"""
