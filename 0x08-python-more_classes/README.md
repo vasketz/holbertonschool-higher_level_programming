@@ -1,0 +1,1 @@
+*This folder contains the project 0x08 more objects and classes of Holberton school*
