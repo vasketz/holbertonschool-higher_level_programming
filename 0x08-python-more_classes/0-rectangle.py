@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-"""class Rectangle"""
+"""0-rectangle.py"""
 
 
 class Rectangle:
+    """Creat a class rectangle"""
     pass
