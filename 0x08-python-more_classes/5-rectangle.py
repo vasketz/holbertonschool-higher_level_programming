@@ -48,7 +48,7 @@ class Rectangle:
 
     def __del__(self):
         print("Bye rectangle...")
-    
+
     @property
     def height(self):
         """Return getter of height"""
