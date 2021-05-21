@@ -4,8 +4,11 @@
 
 class Rectangle:
     """Creat a class rectangle"""
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """initialize values"""
+        Rectangle.number_of_instances += 1
         if isinstance(height, int):
             self.__height = height
             if height < 0:
@@ -18,6 +21,37 @@ class Rectangle:
                 raise ValueError("width must be >= 0")
         else:
             raise TypeError("width must be an integer")
+
+    def area(self):
+        """Area of rectangle"""
+        return self.__height * self.__width
+
+    def perimeter(self):
+        """Perimeter of rectangle"""
+        if self.__height == 0 or self.__width == 0:
+            return 0
+        return 2 * (self.__height + self.__width)
+
+    def __str__(self):
+        """Function str"""
+        strg = ""
+        if self.__height == 0 or self.__width == 0:
+            return strg
+        for hg in range(self.__height):
+            for wd in range(self.__width):
+                strg = strg + '#'
+            if hg < self.__height - 1:
+                strg = strg + '\n'
+        return strg
+
+    def __repr__(self):
+        """repr function"""
+        strg = "Rectangle({}, {})".format(self.__width, self.__height)
+        return strg
+
+    def __del__(self):
+        Rectangle.number_of_instances -= 1
+        print("Bye rectangle...")
 
     @property
     def height(self):

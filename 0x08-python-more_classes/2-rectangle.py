@@ -19,6 +19,16 @@ class Rectangle:
         else:
             raise TypeError("width must be an integer")
 
+    def area(self):
+        """Area of rectangle"""
+        return self.__height * self.__width
+
+    def perimeter(self):
+        """Perimeter of rectangle"""
+        if self.__height == 0 or self.__width == 0:
+            return 0
+        return 2 * (self.__height + self.__width)
+
     @property
     def height(self):
         """Return getter of height"""
