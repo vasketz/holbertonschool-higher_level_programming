@@ -32,6 +32,8 @@ class Rectangle:
     def __str__(self):
         """Function str"""
         strg = ""
+        if self.__height == 0 or self.__width == 0:
+            return 0
         for hg in range(self.__height):
             for wd in range(self.__width):
                 strg = strg + '#'
