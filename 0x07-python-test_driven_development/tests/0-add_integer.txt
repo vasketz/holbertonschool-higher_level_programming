@@ -27,6 +27,11 @@ Add two floats, one negative.
 >>> add_integer(2.3, -7.3)
 -5
 
+Add one argument.
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+>>> add_integer(4)
+102
+
 Add a Nan float.
 ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
 >>> add_integer(float("Nan"))
