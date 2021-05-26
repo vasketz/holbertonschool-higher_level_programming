@@ -29,8 +29,17 @@ Add two floats, one negative.
 
 Add float overflow.
 ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
->>> add_integer(2.45343, 2.98264)
-4
+>>> add_integer(float("inf"), 2)
+Traceback (most recent call last):
+...
+OverflowError: cannot convert float infinity to integer
+
+Add None trough arguments.
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+>>> add_integer(None)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
 
 Add one string and one integer.
 ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
