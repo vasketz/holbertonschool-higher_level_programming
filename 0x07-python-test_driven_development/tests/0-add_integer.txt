@@ -10,10 +10,54 @@ This is an example test file in .txt format. First import
 >>> add_integer = __import__('0-add_integer').add_integer
 
 Now use it:
+==========
 
+Add two positive numbers.
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
 >>> add_integer(2, 3)
 5
+
+Add one float and one integer.
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
 >>> add_integer(2.3, 4)
 6
->>> add_integer(2.3, 2.3)
-4
+
+Add two floats, one negative.
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+>>> add_integer(2.3, -7.3)
+-5
+
+Add one string and one integer.
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+>>> add_integer("e", 2)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+Add an integer and a character.
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+>>> add_integer(2, 'e')
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+Add a list and an integer.
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+>>> add_integer([2], 4)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+Add an integer and a tuple.
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+>>> add_integer(2, (5, 2))
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+Add a null arguments.
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+>>> add_integer()
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 1 required positional argument: 'a'
