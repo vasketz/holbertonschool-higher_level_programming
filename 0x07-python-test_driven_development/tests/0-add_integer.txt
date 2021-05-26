@@ -27,6 +27,11 @@ Add two floats, one negative.
 >>> add_integer(2.3, -7.3)
 -5
 
+Add float overflow.
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+>>> add_integer(2.45343, 2.98264)
+4
+
 Add one string and one integer.
 ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
 >>> add_integer("e", 2)
