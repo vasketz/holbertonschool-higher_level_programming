@@ -27,6 +27,13 @@ Add two floats, one negative.
 >>> add_integer(2.3, -7.3)
 -5
 
+Add a Nan float.
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+>>> add_integer(float("Nan"))
+Traceback (most recent call last):
+...
+ValueError: cannot convert float NaN to integer
+
 Add float overflow.
 ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
 >>> add_integer(float("inf"), 2)
