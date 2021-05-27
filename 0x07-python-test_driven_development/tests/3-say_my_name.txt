@@ -1,0 +1,53 @@
+============================
+the ``3-say_my_name`` module
+============================
+
+Using ``say_my_name``
+----------------------------
+
+This is an example test file in .txt format. First import
+``say_my_name`` from the ``3-say_my_name`` module:
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+===========
+Now use it:
+===========
+
+Pass two strings:
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+>>> say_my_name("John", "Smith")
+My name is John Smith
+
+Pass one string:
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+>>> say_my_name("Bob")
+My name is Bob 
+
+Pass a string and a number:
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+>>> say_my_name("Andrew", 323)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
+
+Pass a number and a string:
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+>>> say_my_name(1, "walter")
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+Pass a None arguments:
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+>>> say_my_name(None, None)
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+Pass any argument:
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+>>> say_my_name()
+Traceback (most recent call last):
+...
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'
