@@ -42,3 +42,10 @@ Print in case pass a string:
 Traceback (most recent call last):
 ...
 TypeError: size must be an integer
+
+Print if dont pass any argument:
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+>>> print_square()
+Traceback (most recent call last):
+...
+TypeError: print_square() missing 1 required positional argument: 'size'
