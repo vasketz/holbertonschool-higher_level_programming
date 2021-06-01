@@ -1,0 +1,1 @@
+*THis folder contains the project of inheritance of Holberton School*
