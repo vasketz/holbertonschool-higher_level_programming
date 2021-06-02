@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-import json
 """
 This is the modle documentation
 """
+import json
 
 
 def to_json_string(my_obj):
