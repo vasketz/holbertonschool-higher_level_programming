@@ -14,8 +14,8 @@ filename = "add_item.json"
 
 try:
     objec = load_from_json_file(filename)
-for i in arg:
-    objec.append(i)
-save_to_json_file(objec, filename)
+    for i in arg:
+        objec.append(i)
+    save_to_json_file(objec, filename)
 except:
     save_to_jason_file(arg, filename)
