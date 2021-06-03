@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-""" 
-This is the module documentation first import 
+"""
+This is the module documentation first import
 """
 import sys
 import json
