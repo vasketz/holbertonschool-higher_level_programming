@@ -20,4 +20,4 @@ try:
     objec = load_from_json_file(filename)
     save_to_json_file(objec + arg, filename)
 except:
-    save_to_jason_file([] + arg, filename)
+    save_to_json_file([] + arg, filename)
