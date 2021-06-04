@@ -17,7 +17,7 @@ class Student:
         diccio = {}
         if type(attrs) is not list:
             return self.__dict__
-        else:     
+        else:
             for item in attrs:
                 if type(item) is not str:
                     return self.__dict__
