@@ -33,17 +33,17 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(r3.height, 15)
         self.assertEqual(r3.x, 5)
         self.assertEqual(r3.y, 4)
-        
+
     def test_ErrorType(self):
         r = Rectangle("x", 2)
         self.assertRaises(TypeError, r.width)
-        
+
     def test_ErrorValue(self):
         r1 = Rectangle(-0, 2)
         self.assertRaises(ValueError, r1.width)
         r2 = Rectangle(8, 15, -5, 4, 6)
         self.assertRaises(ValueError, r2.x)
-        
+
     def test_area(self):
         r = Rectangle(3, 2)
         self.assertEqual(r.area(), 6)
