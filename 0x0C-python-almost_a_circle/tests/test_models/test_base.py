@@ -19,7 +19,7 @@ class BaseTest(unittest.TestCase):
         b2 = Base(21)
         self.assertEqual(b2.id, 21)
         b3 = Base(-22)
-        self.assertEqual(b3.id, -22)    
+        self.assertEqual(b3.id, -22)
         b4 = Base(12)
         self.assertEqual(b4.id, 12)
         b5 = Base("er")
