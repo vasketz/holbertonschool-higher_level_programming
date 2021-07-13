@@ -1,0 +1,1 @@
+*This project is the introduction to SQL of Holberton School*
