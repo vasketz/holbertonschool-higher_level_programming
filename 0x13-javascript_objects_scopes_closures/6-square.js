@@ -7,7 +7,7 @@ module.exports = class Square extends Squar {
   }
 
   charPrint (c) {
-    if (typeof(c) === 'undefined') {
+    if (typeof c === 'undefined') {
       this.print();
     } else {
       let character = '';
