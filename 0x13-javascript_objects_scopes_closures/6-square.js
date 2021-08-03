@@ -3,7 +3,7 @@
 const Squar = require('./5-square');
 module.exports = class Square extends Squar {
   constructor (size) {
-    super(size);
+    super(size, size);
   }
 
   charPrint (c) {
