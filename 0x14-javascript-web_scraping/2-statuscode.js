@@ -1,12 +1,12 @@
 #!/usr/bin/node
-//statusCode output from request
+// statusCode output from request
 
 const request = require('request');
 
-request(process.argv[2], (data) => {
-  console.log('code:', data && data.statusCode);
-
-  data.on('error', (e) => {
-    console.error(e);
-  });
+request(process.argv[2], (err, data) => {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log('code: ', data && data.statusCode);
+  }
 });
